@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tiana Randall - The Loan Girl</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="tiana.jpg" alt="Tiana Randall" class="profile-pic" />
+      <h1>Tiana Randall</h1>
+      <p class="subtitle">AZ Native • Mortgage Expert • NMLS #2275797</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.loandepot.com/loan-officers/trandall" class="apply-btn" target="_blank">Apply Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m Tiana, an Arizona native and mortgage expert who’s passionate about helping families achieve their goals. Whether you’re buying your first home or refinancing, I’m here to guide you through the journey with care, expertise, and clarity.</p>
+    </section>
+
+    <section id="calculator">
+      <h2>Mortgage Calculator</h2>
+      <label>Loan Amount: <input type="number" id="loanAmount"></label>
+      <label>Interest Rate (%): <input type="number" id="interestRate" step="0.01"></label>
+      <label>Loan Term (years): <input type="number" id="loanTerm"></label>
+      <button onclick="calculateMortgage()">Calculate</button>
+      <p id="monthlyPayment"></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Phone:</strong> <a href="tel:4802028397">480-202-8397</a></p>
+      <p><strong>Email:</strong> <a href="mailto:trandall@loandepot.com">trandall@loandepot.com</a></p>
+    </section>
+  </main>
+
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">Chat with TianaBot</div>
+    <div class="chat-body" id="chatBody">
+      <p><strong>Bot:</strong> Hi! How can I help you today?</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type your message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <button class="chat-toggle" onclick="toggleChat()">💬</button>
+
+  <footer>
+    <p>&copy; 2025 Tiana Randall • The Loan Girl</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
