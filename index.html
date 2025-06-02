@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiana Randall - The Loan Girl</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Tiana Randall</h1>
+      <p class="subtitle">"The Loan Girl"</p>
+      <nav>
+        <a href="#about">About Me</a>
+        <a href="#calculator">Mortgage Calculator</a>
+        <a href="#contact">Contact</a>
+        <a href="#apply">Apply</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>Hi! I'm Tiana Randall, your trusted mortgage professional. With a passion for helping people achieve homeownership, I offer personalized guidance every step of the way. NMLS ID: 2275797.</p>
+      </div>
+    </section>
+
+    <section id="calculator">
+      <div class="container">
+        <h2>Mortgage Calculator</h2>
+        <label>Loan Amount: <input type="number" id="loanAmount" /></label>
+        <label>Interest Rate (%): <input type="number" id="interestRate" step="0.01" /></label>
+        <label>Loan Term (years): <input type="number" id="loanTerm" /></label>
+        <button onclick="calculateMortgage()">Calculate</button>
+        <p id="monthlyPayment"></p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p><strong>Phone:</strong> <a href="tel:4802028397">480-202-8397</a></p>
+        <p><strong>Email:</strong> <a href="mailto:trandall@loandepot.com">trandall@loandepot.com</a></p>
+      </div>
+    </section>
+
+    <section id="apply">
+      <div class="container">
+        <h2>Apply Now</h2>
+        <p><a href="mailto:trandall@loandepot.com" class="apply-button">Click here to apply directly</a></p>
+      </div>
+    </section>
+  </main>
+
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">Chat with us</div>
+    <div class="chat-body" id="chatBody">
+      <p><strong>Bot:</strong> Hi! How can I help you today?</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type a message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <button class="chatbot-button" onclick="toggleChat()">💬</button>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Tiana Randall - All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
